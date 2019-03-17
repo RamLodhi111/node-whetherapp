@@ -4,7 +4,7 @@
   "description": "Web server by using express js framework",
   "main": "index.js",
   "scripts": {
-      "start": "node src/app"
+      "start": "node src/app.js"
   },
   "author": "Ram Lodhi",
   "license": "ISC",
