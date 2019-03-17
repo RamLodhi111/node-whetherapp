@@ -31,6 +31,7 @@ whetherForm.addEventListener('submit',(e)=>{
     const location = search.value;
     console.log(location)
     //http://localhost:3000/?loc=
+    
     fetch('/?loc='+location+'').then((response)=>{
     response.json().then((data)=>{
         if(data.error){
