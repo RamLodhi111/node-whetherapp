@@ -10,6 +10,8 @@ const forecast =require('./utils/forecast');
 const publicDirectoryPath=path.join(__dirname,'../public');
 const viewsDirectoryPath = path.join(__dirname,'../template/views');
 const partialDirectoryPath=path.join(__dirname,'../template/partials')
+
+const port = process.env.port || 3000;
 //To define express will use static content from this path (by default take index.html)
 //setup static directory to server
 app.use(express.static(publicDirectoryPath))
@@ -118,7 +120,7 @@ app.get('*', (req, res) => {
 })
 
 //Starts the server on port 3000
-app.listen(3000, () => {
-    console.log('Server is started on port 3000');
+app.listen(port, () => {
+    console.log('Server is started on port '+port);
 })
 
